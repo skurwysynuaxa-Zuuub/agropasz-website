@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" viewBox="0 0 800 300" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">AGROPASZ GROUP</title>
+  <desc id="logoDesc">Profesjonalne 3D logo AGROPASZ GROUP w kolorystyce fluo (zielony, różowy, żółty), wersja skalowalna SVG.</desc>
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#9bff00"/>
+      <stop offset="0.45" stop-color="#39ff14"/>
+      <stop offset="1" stop-color="#00ffd1"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" x2="1">
+      <stop offset="0" stop-color="#ff2d95"/>
+      <stop offset="1" stop-color="#ffa800"/>
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#00ff88" flood-opacity="0.15"/>
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 3D stylized seed/leaf mark -->
+  <g transform="translate(40,30)" filter="url(#shadow)">
+    <!-- Back extruded layer -->
+    <path d="M120 30 C180 10 240 10 300 60 C260 120 200 160 120 150 C80 140 60 90 120 30 Z"
+          fill="#071422" opacity="0.12" transform="translate(12,18) scale(0.98)"/>
+    <!-- Main colorful shape -->
+    <path d="M120 30 C180 10 240 10 300 60 C260 120 200 160 120 150 C80 140 60 90 120 30 Z"
+          fill="url(#g1)" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+    <!-- Top glossy highlight -->
+    <path d="M140 40 C190 30 230 30 270 60 C240 95 200 120 140 115 C115 110 100 80 140 40 Z"
+          fill="url(#g2)" opacity="0.15" style="mix-blend-mode:screen"/>
+    <!-- Inner detail line (gives 3D contour) -->
+    <path d="M145 55 C190 45 225 48 255 75"
+          stroke="#ffffff" stroke-opacity="0.12" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Text: AGROPASZ GROUP -->
+  <g transform="translate(360,120)">
+    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="64"
+          fill="#ffffff" style="letter-spacing: -1px">AGROPASZ</text>
+    <text x="6" y="48" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="26"
+          fill="url(#g1)" style="letter-spacing: 2px">GROUP</text>
+
+    <!-- Neon underline -->
+    <rect x="0" y="14" width="220" height="6" rx="3" fill="url(#g2)" opacity="0.14" transform="translate(0,62)"/>
+    <rect x="0" y="14" width="120" height="6" rx="3" fill="#39ff14" opacity="0.36" transform="translate(0,62)"/>
+  </g>
+
+  <!-- subtle outer glow -->
+  <rect x="0" y="0" width="800" height="300" fill="none" filter="url(#glow)"/>
+</svg>
