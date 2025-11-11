@@ -1,132 +1,63 @@
-<!doctype html>
-<html lang="pl">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>AGROPASZ GROUP — Strona główna</title>
-  <link rel="stylesheet" href="styles.css" />
-  <meta name="description" content="AGROPASZ GROUP — promowanie młodych talentów i innowacyjnych projektów: muzyka, design, technologie i inicjatywy społeczne." />
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/og-image.svg">
-  <meta property="og:title" content="AGROPASZ GROUP" />
-  <meta property="og:description" content="Promujemy młode talenty — muzyka, design i innowacje. Dajemy głos twórcom przyszłości." />
-  <meta property="og:image" content="/og-image.svg" />
-  <meta name="twitter:card" content="summary_large_image" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agropasz Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .container:hover {
+            transform: scale(1.05);
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #666;
+            text-align: center;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            color: #fff;
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: linear-gradient(90deg, #0072ff, #00c6ff);
+        }
+    </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="#">
-        <img src="logo.svg" alt="AGROPASZ GROUP logo" class="logo-img" />
-      </a>
-      <nav class="nav">
-        <a href="#about">O nas</a>
-        <a href="#services">Oferta</a>
-        <a href="#projects">Projekty</a>
-        <a href="#contact">Kontakt</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <h1>AGROPASZ GROUP</h1>
-          <p class="tagline">Promujemy młode talenty — muzyka, design i innowacje. Dajemy głos twórcom przyszłości.</p>
-          <p class="cta-row">
-            <a class="btn primary" href="#contact">Dołącz</a>
-            <a class="btn ghost" href="#projects">Zobacz projekty</a>
-          </p>
-        </div>
-        <div class="hero-image">
-          <!-- Placeholder image / illustration -->
-          <div class="illustration">3D FLUO LOGO</div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section about container">
-      <h2>O nas</h2>
-      <p>
-        Witaj w AGROPASZ GROUP!
-      </p>
-      <p>
-        Jesteśmy platformą stworzoną z myślą o jednym celu: promowaniu młodych, utalentowanych ludzi i ich niezwykłych projektów. Wierzymy, że przyszłość należy do tych, którzy mają odwagę tworzyć, dlatego naszą misją jest dawanie im głosu i przestrzeni do rozwoju.
-      </p>
-      <p>
-        Na tej stronie znajdziesz profile wschodzących artystów, innowatorów i aktywistów, którym pomagamy dotrzeć do szerszej publiczności. Od muzyki przez design, po nowe technologie i inicjatywy społeczne – AGROPASZ GROUP to Twój przewodnik po tym, co najlepsze w młodym pokoleniu.
-      </p>
-      <p>
-        Nasz plan jest prosty:
-      </p>
-      <ul>
-        <li><strong>Odkrywać:</strong> Aktywnie poszukujemy talentów.</li>
-        <li><strong>Wspierać:</strong> Oferujemy mentoring i promocję.</li>
-        <li><strong>Łączyć:</strong> Budujemy społeczność twórców i odbiorców.</li>
-      </ul>
-      <p>
-        Dołącz do nas (na WWW, Facebooku i Instagramie) i bądź na bieżąco z tymi, o których już wkrótce będzie głośno.
-      </p>
-    </section>
-
-    <section id="services" class="section services container">
-      <h2>Oferta</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>Programy wsparcia</h3>
-          <p>Mentoring, promocja i warsztaty dla młodych twórców.</p>
-        </article>
-        <article class="card">
-          <h3>Promocja projektów</h3>
-          <p>Prezentacje, wystawy i kampanie social media dla wybranych talentów.</p>
-        </article>
-        <article class="card">
-          <h3>Wydarzenia</h3>
-          <p>Organizacja spotkań, showcase'ów i hackathonów twórczych.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="projects" class="section projects container">
-      <h2>Wybrane projekty</h2>
-      <ul>
-        <li>Platforma dźwiękowa dla nowych muzyków — serię publikacji i showcase.</li>
-        <li>Inkubator projektów designu — wsparcie prototypowania i promocji.</li>
-        <li>Program grantowy dla inicjatyw społecznych — mikrofinansowanie i mentoring.</li>
-      </ul>
-    </section>
-
-    <section id="contact" class="section contact container">
-      <h2>Kontakt</h2>
-      <p>Masz pytania? Napisz do nas lub zostaw wiadomość.</p>
-      <form action="https://formspree.io/f/yourformid" method="POST" class="contact-form">
-        <label>
-          Imię i nazwisko
-          <input type="text" name="name" required />
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" required />
-        </label>
-        <label>
-          Wiadomość
-          <textarea name="message" rows="5" required></textarea>
-        </label>
-        <button class="btn primary" type="submit">Wyślij</button>
-      </form>
-      <p class="small">Telefon: +48 000 000 000 • Email: kontakt@agropasz.example</p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> AGROPASZ GROUP — Wszelkie prawa zastrzeżone.</p>
+        <h1>Welcome to Agropasz</h1>
+        <p>Your one-stop solution for all agricultural needs.</p>
+        <button class="button">Learn More</button>
     </div>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
